@@ -1,15 +1,12 @@
+import data from './startData';
 import compare from './compare';
+import clearTable from './clearTable';
+import getTable from './getTable';
 import arrowToggle from './arrowToggle';
 
-const tableBody = document.getElementById('tableBody');
-
 export default function getSort(key, direction) {
-  const dataSort = Array.from(tableBody.getElementsByTagName('tr'));
-  compare(key, direction, dataSort);
-
-  dataSort.forEach((item) => {
-    tableBody.append(item);
-  });
-
+  compare(key, direction, data);
+  clearTable();
+  getTable(data);
   arrowToggle(key, direction);
 }

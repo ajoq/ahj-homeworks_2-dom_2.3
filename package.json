@@ -1,8 +1,8 @@
 {
-  "name": "ahj-homeworks_2-dom_2.2",
+  "name": "ahj-homeworks_2-dom_2.3",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:ajoq/ahj-homeworks_2-dom_2.2.git",
+  "repository": "git@github.com:ajoq/ahj-homeworks_2-dom_2.3.git",
   "author": "Konstantin Beloglazov <ajoq@ya.ru>",
   "license": "MIT",
   "devDependencies": {
