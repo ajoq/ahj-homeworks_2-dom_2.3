@@ -1,13 +1,15 @@
 import compare from './compare';
 import arrowToggle from './arrowToggle';
 
+const tableBody = document.getElementById('tableBody');
+
 export default function getSort(key, direction) {
-    const dataSort = Array.from(tableBody.getElementsByTagName('tr'));
-    compare(key, direction, dataSort);
+  const dataSort = Array.from(tableBody.getElementsByTagName('tr'));
+  compare(key, direction, dataSort);
 
-    dataSort.forEach(item => {
-        tableBody.append(item);
-    });    
+  dataSort.forEach((item) => {
+    tableBody.append(item);
+  });
 
-    arrowToggle(key, direction);
-};
+  arrowToggle(key, direction);
+}

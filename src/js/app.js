@@ -4,4 +4,4 @@ import intervalSort from './intervalSort';
 
 getTable(data);
 
-let intervalId = setInterval(intervalSort, 2000);
+setInterval(intervalSort, 2000);
